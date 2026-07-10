@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+color:white;
+
+}
+
+/* Header */
+
+.contact-header{
+
+text-align:center;
+padding:70px 20px;
+
+}
+
+.contact-header h1{
+
+font-size:50px;
+margin-bottom:15px;
+
+}
+
+.contact-header p{
+
+color:#d1d5db;
+font-size:18px;
+
+}
+
+/* Container */
+
+.container{
+
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+
+}
+
+/* Left */
+
+.left{
+
+background:#ffffff10;
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:20px;
+
+}
+
+.left h2{
+
+margin-bottom:25px;
+
+}
+
+.input-box{
+
+margin-bottom:20px;
+
+}
+
+.input-box input,
+.input-box textarea{
+
+width:100%;
+padding:16px;
+border:none;
+border-radius:10px;
+background:#ffffff15;
+color:white;
+font-size:15px;
+outline:none;
+
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder{
+
+color:#d1d5db;
+
+}
+
+textarea{
+
+resize:none;
+height:170px;
+
+}
+
+button{
+
+width:100%;
+padding:16px;
+background:#2563eb;
+color:white;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#1d4ed8;
+
+}
+
+/* Right */
+
+.right{
+
+background:white;
+border-radius:20px;
+padding:40px;
+color:#111827;
+
+}
+
+.right h2{
+
+margin-bottom:25px;
+
+}
+
+.info{
+
+display:flex;
+align-items:center;
+margin-bottom:25px;
+
+}
+
+.icon{
+
+width:55px;
+height:55px;
+background:#2563eb;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:22px;
+margin-right:18px;
+
+}
+
+.info h4{
+
+margin-bottom:5px;
+
+}
+
+.social{
+
+margin-top:35px;
+
+}
+
+.social a{
+
+display:inline-flex;
+justify-content:center;
+align-items:center;
+
+width:45px;
+height:45px;
+
+background:#2563eb;
+color:white;
+
+margin-right:12px;
+
+border-radius:50%;
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.social a:hover{
+
+transform:translateY(-5px);
+background:#1d4ed8;
+
+}
+
+/* Map */
+
+.map{
+
+max-width:1200px;
+margin:60px auto;
+padding:0 20px;
+
+}
+
+iframe{
+
+width:100%;
+height:450px;
+border:none;
+border-radius:20px;
+
+}
+
+/* Footer */
+
+footer{
+
+text-align:center;
+padding:30px;
+color:#d1d5db;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-header h1{
+
+font-size:38px;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="contact-header">
+
+<h1>Contact Us</h1>
+
+<p>We would love to hear from you. Send us your query anytime.</p>
+
+</section>
+
+<div class="container">
+
+<div class="left">
+
+<h2>Send Message</h2>
+
+<form>
+
+<div class="input-box">
+
+<input type="text" placeholder="Full Name">
+
+</div>
+
+<div class="input-box">
+
+<input type="email" placeholder="Email Address">
+
+</div>
+
+<div class="input-box">
+
+<input type="tel" placeholder="Phone Number">
+
+</div>
+
+<div class="input-box">
+
+<textarea placeholder="Your Message"></textarea>
+
+</div>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+<div class="right">
+
+<h2>Get In Touch</h2>
+
+<div class="info">
+
+<div class="icon">
+
+<i class="fas fa-location-dot"></i>
+
+</div>
+
+<div>
+
+<h4>Address</h4>
+
+<p>Your Office Address Here</p>
+
+</div>
+
+</div>
+
+<div class="info">
+
+<div class="icon">
+
+<i class="fas fa-phone"></i>
+
+</div>
+
+<div>
+
+<h4>Phone</h4>
+
+<p>+91 9876543210</p>
+
+</div>
+
+</div>
+
+<div class="info">
+
+<div class="icon">
+
+<i class="fas fa-envelope"></i>
+
+</div>
+
+<div>
+
+<h4>Email</h4>
+
+<p>info@example.com</p>
+
+</div>
+
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8979718622!2d77.04417495!3d28.5275544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce31c63f2d7e1%3A0x7e34a93cf9f5a353!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v1710000000000"
+loading="lazy">
+</iframe>
+
+</div>
+
+<footer>
+
+© 2026 Your Company. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
