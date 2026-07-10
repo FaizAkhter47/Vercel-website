@@ -6,38 +6,17 @@ pipeline {
     }
 
     stages {
-        stage ('install') {
-            steps{
-                bat 'npm install'
+
+        stage('Test') {
+            steps {
+                bat 'echo No test script found'
             }
-        
-
-        }
-        
-        stage ('test') {
-            steps{
-                bat 'no test script'
-            }
-        
-
-        }
-        
-        stage ('bild') {
-            steps{
-                bat 'npm run build'
-
-            }
-        
-
         }
 
-        stage ('deploy') {
-            steps{
-                bat 'npx vercel --prod --yes 
-                --token=%vercel_token%'
+        stage('Deploy') {
+            steps {
+                bat 'npx vercel --prod --yes --token=%VERCEL_TOKEN%'
             }
-        
-
         }
     }
 }
